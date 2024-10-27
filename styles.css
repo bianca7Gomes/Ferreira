@@ -1,11 +1,19 @@
+@import url(styles/header.css);
+@import url(styles/banner.css);
+@import url(styles/carrossel.css);
+
 :root {
-    --cor-de-fundo: #EBECEE;
+    --cor-de-fundo:#4e443d;
+    --branco: #FFFFFF;
+    --rose: #875f2b;
+    --rosa-degrade: linear-gradient(97.54deg, #9f4102 35.49%, #ab592a 165.37%);
+    --fonte-principal: "Ubuntun";
+    --preto: #000000;
 }
 
-Body {
+body {
     background-color: var(--cor-de-fundo);
-}
-
-h1 {
-    background-color: white;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
