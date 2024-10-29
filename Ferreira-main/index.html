@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ferreira</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="styles.css">     
+    </head>
+
+    <body>
+        <header class="cabeçalho">
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__botao"/>
+                <label for="menu">
+                    <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+                </label>
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Jóias</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Relógios</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Love</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Presentes</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Acessórios</a>
+                    </li>
+                </ul>
+                <img src="img/Logo.svg" alt="Logo do projeto">
+            </div>
+            <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="img/Compras.svg"alt="Carrinho de compras"   class="container__imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+            </div>
+        </header>
+
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class=banner__texto>Encontre o acessório que você precisa!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        </section>
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Ferreira</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+             <!-- Additional required wrapper -->
+             <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="photos/imagem1.jpeg" alt="Anéis capa">
+                 </div>
+                 <div class="swiper-slide"><img src="photos/imagem2.jpg" alt="anéis capa">
+                 </div>
+                 <div class="swiper-slide"><img src="photos/imagem3.jpg" alt="anéis capa">
+                 </div>
+             </div>
+             
+            <!-- If we need navigation buttons -->
+             <div class="swiper-button-prev"></div>
+             <div class="swiper-button-next"></div>
+             </div>
+
+             </section>
+            
+           <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+           <script>
+           const swiper = new Swiper(".swiper", {
+            spaceBetween: 10,
+            slidesPerview: 3,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+            },
+           });
+           </script>
+
+           <div class="card__descrição">
+            <div class="descrição">
+                <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+                <p class="descrição__texto">Construindo uma aplicação integrada com a plataforma do google.</p>
+            </div>
+            <img src="img/Angular.svg" class="descrição__imagem"/>
+           </div>
+           <div class="card__botões">
+            <ul class="botões">
+                <li class="botões__item">
+                    <img src="img/Favoritos.svg" alt="Favoritos livros">
+                </li>
+                <li class="botões___item">
+                    <img src="img/Compras.svg" alt="Adicionar no carrinho de compras"
+                </li>
+            </ul>
+            <a href="#" class="botões__ancora">Saiba mais</a>
+           </div>
+
+           <section class="carrossel">
+            <h2 class="carrossel__titulo">Mais vendidos</h2>
+            <div class="swiper">
+                <!--Additional required wrapper -->
+                <!--If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!--Slides-->
+                    <div class="swiper-slide"><img src="photos/imagem01" alt="imagem01"></div>
+                    <div class="swiper-slide"><img src="photos/imagem02" alt="imagem02"></div>
+                    <div class="swiper-slide"><img src="photos/imagem03" alt="imagem03"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="card">
+                    <!-- 1° linha -->
+                     <div class="card__descrição">
+                    <!-- 1° coluna -->
+                     <div class="descrição">
+                        <img src="img/Estrelinha"
+                     </div>
+                     </div>
+                </div>
+            </div>
+           </section>
+    </body>
+
+</html>
